@@ -1,0 +1,27 @@
+nav {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.page-link {
+    margin: 0 10px;
+    border: 2px solid #87c4cf;
+    padding: 0 10px; 
+    color: black;
+    font-size: 20px;
+    &:hover {
+        background: #d1e8ec;
+        border: 2px solid #87c4cf;
+    } 
+    &:focus,
+    &.active {
+        background: #87c4cf;
+        border: 2px solid #87c4cf;
+    }
+}

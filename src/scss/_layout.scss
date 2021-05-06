@@ -1,0 +1,15 @@
+.layout {
+    background: #f5fafb;
+    height: auto;
+    margin: 70px 0;
+    padding: 3rem 1.5rem;
+}
+
+/* Desktop */
+@media screen and (min-width: 650px) {
+    .layout {
+        width: 80vw;
+        margin: 70px auto;
+        padding: 1rem;
+    }
+}

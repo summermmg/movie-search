@@ -1,0 +1,116 @@
+/* define mobile first */
+
+
+.navigation {
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;    
+    right: 0;
+    width: 100%;
+    height: 70px;   
+    background: #274472;
+    -webkit-box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px     rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+  
+.nav-container {
+    height: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    /* important */
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    /* important */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+  
+.nav-brand a {
+    font-size: 1.4rem;
+}
+
+.nav-menu {
+    visibility: hidden;
+    position: fixed;
+    overflow: hidden;
+    background: #274472;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 2rem;
+    z-index: 200;
+}
+  
+.active.nav-menu {
+    visibility: visible;
+}
+
+.nav-menu a {  
+    display: block;
+    padding: .5rem 2rem;
+    color: white;
+}
+
+.nav-menu a:hover {
+    background: #4d7ac2;
+}
+
+.nav-mobile-header, #toggle-open, #toggle-close {
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: white;
+}
+
+#toggle-close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#toggle-close {
+    margin-left: auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-end;
+    margin: 20px;
+}
+  
+/* Desktop */
+@media screen and (min-width: 650px) {
+    .nav-menu {
+        visibility: visible;
+        position: static;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;    
+        font-size: 1.5rem;
+    }
+    .nav-menu a {  
+        padding: 0 2rem;
+        /* make verticlly same height with container */
+        display: inline-block;
+        line-height: 70px;
+    }
+    #toggle-close, #toggle-open {
+        display: none;
+    } 
+}

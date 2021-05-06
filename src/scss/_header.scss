@@ -1,0 +1,61 @@
+section {
+    padding: 1rem;
+    h2 {
+        text-align: center;
+    }    
+}
+
+
+/* Search Bar */
+.bar-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    a {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        font-size: 20px;
+        &:hover {
+            cursor: pointer;
+            color: #274472;
+        }        
+    }
+}
+
+.bar {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 30px;
+    border: none;
+    padding-left: 20px;;
+    border-radius: 30px;
+    border: 1px solid #dcdcdc;
+    background: white;
+}
+
+.searchbar {
+    height: 45px;
+    width: 80%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: white;
+}
+
+.bar:hover {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+} 
+
+.bar:focus-within {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline: none;
+}
+
+
+
+@media screen and (min-width: 650px) {
+    .bar-container a {
+        right: 4%;
+    }
+}
